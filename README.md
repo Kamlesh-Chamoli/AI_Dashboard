@@ -19,59 +19,24 @@ To establish a dashboard containg banking dataset using chatgpt and then to draw
 ```
 <img width="617" height="457" alt="image" src="https://github.com/user-attachments/assets/8f4d5e2d-3105-4ace-a679-d66ec556678d" />
 
-- Step 6 :
-- Step 7 : Click on "Transform Data" tab in Power Bi tab to see data type of each column and change it to "Text","Decimal","Alphabet" etc according to column needs.
-- Step 8 : A Rounded rectangle is added at top of page using Inset>Shape>Rounded rectangle.Text written inside it "Transaction Overview".              
-```bash
-                     Loan amount by purpose = SUMX(FILTER('Loan_default part 412',NOT(ISBLANK           
-                     ('Loan_default part 412'[LoanAmount]))),'Loan_default part 412'[LoanAmount])
-```
- A line graph was used to show "Loan Amount Taken For Different Purposes".
+- Step 6 : Click on "Transform Data" tab in Power Bi tab to see data type of each column and change it to "Text","Decimal","Alphabet" etc according to column needs.Also, do data cleaning i.e removing duplictes, 'replace' null to 'unknown'.
+- Step 7 : Whhile changing data type of dates column it is showing "ERROR" therefore choose "Use Locale" from dropdown then "Data Type" = Date and "Locale" = English(US).
 
-<img width="417" height="303" alt="loan amount by purpose" src="https://github.com/user-attachments/assets/07dcef10-4df4-4527-8052-19b74606bf6d" />
-
-  
-
-
-
-- Step 7 : DAX is used to find "Average income by employment type"
-```bash
-                    Average income by employment type = CALCULATE(AVERAGE('Loan_default part  
-                    412'[Income]),ALLEXCEPT('Loan_default part 412','Loan_default part 412'
-                    [EmploymentType]))
-```
-  Line graph added to show "Average income by employement type".    
-
-
-
-- Step 8 : DAX is used to find "Default rate %
-```bash
-
-                   Default rate vis-a-vis to total by employment type = var total=COUNTROWS(ALL('Loan_default part 412'))     
-                   var default=COUNTROWS(FILTER('Loan_default part 412','Loan_default part 412'[Default]=TRUE()))       
-                   return CALCULATE(DIVIDE(default,total))*100
-```
-   Line graph added to show "Default rate(%) by employment type"
-
-   
-- Step 9 : DAX is used to add new column "Age group"
+- Step 8 : In first page a rectangle containing "Transaction Overview" as text is put from Insert--> Shape option from Power Bi. 
+- Step 9 : Creating a card visual "Total transaction Count" using DAX formula suggested by Perplexity.
  ```bash
-                   Age group = IF('Loan_default part 412'[Age]<=19,"Teen",
-                               IF('Loan_default part 412'[Age]<=39,"Adults",
-                               IF('Loan_default part 412'[Age]<=59,"Middle Aged","Senior Citizens")))
+                   Total Transactions = COUNT(CombinedTransactions1[TransactionID])
  ```
-
-  Another DAX is used to find "Average loan"
+<img width="273" height="249" alt="image" src="https://github.com/user-attachments/assets/14d16766-f3c8-4450-ad3b-7fe20d5205e6" />
+- Step 10 : Creating a card visual "Total Amount" using DAX formula suggested by Perplexity.
 ```bash
-                  Average loan = AVERAGE('Loan_default part 412'[LoanAmount])
+                 Total Amount = SUM(CombinedTransactions1[Amount])
 ```
-Line graph added to show "Average loan by age group"
-
-- Step 10 : DAX is used to create new column "Year"
+- Step 11 : Creating a card visual "Transaction per Customer" using DAX formula suggested by Perplexity.
 ```bash
-                  Year = YEAR('Loan_default part 412'[Loan_Date_DD_MM_YYYY])
+                  Txns per Customer = DIVIDE([Total Transactions], [Active Customers], 0)
 ```
-Another DAX is used to find "Default rate per year"
+-
 ```bash
 
                  Default Rate per year = var total=CALCULATE(COUNTROWS('Loan_default part 412'),ALLEXCEPT('Loan_default part 412','Loan_default part 412'[Year]))
