@@ -84,171 +84,28 @@ To establish a dashboard containg banking dataset using chatgpt and then to draw
 ```bash
                Transactions by Month = CALCULATE(COUNT(CombinedTransactions1[TransactionID]), ALLEXCEPT(CombinedTransactions1, CombinedTransactions1[TransactionDate].[Month]))
 ```
+<img width="1271" height="309" alt="image" src="https://github.com/user-attachments/assets/d01c8515-d194-4ff2-917f-96964fdfcead" />
 
-# Snapshot of all 3 pages of report 
+# Snapshot of all 2 pages of report 
 # Page 1
-<img width="1315" height="737" alt="Page 1" src="https://github.com/user-attachments/assets/acd2dfb0-a1ca-4068-80c8-ca4af25793f2" />
+<img width="1286" height="807" alt="image" src="https://github.com/user-attachments/assets/54184f69-77c7-454a-814e-c92b99e43b38" />
+
 
 # Page 2
-<img width="1318" height="747" alt="Page 2" src="https://github.com/user-attachments/assets/060389e5-355d-4491-80c8-8401f53b3f0a" />
-
-# Page 3
-<img width="1313" height="736" alt="Page 3" src="https://github.com/user-attachments/assets/5d5a2d0e-3d83-490b-8dae-2b3cc432b865" />
-
+<img width="1290" height="725" alt="image" src="https://github.com/user-attachments/assets/2e8fec65-464f-4017-901f-c31e9fc59e51" />
 
 # Insights
 
-A three page report is created and it was published in power bi services.
+A two page report is created and it was published in power bi services.
 
 Following inferences can be drawn from the Report;
 
-### Page 1: Loan default and overview
-### A) Loan amount by purpose
-   Loan taken for purpose "Home"= 6545 Million
-   
-   Loan taken for purpose "Business"= 6522 Million
-   
-   Loan taken for purpose "Education"= 6511 Million
-   
-   Loan taken for purpose "Auto"= 6501 Million
-   
-   Loan taken for purpose "Other"= 6498 Million
-```bash
-   Top three purpose of loan are Home , Business and Education
-```           
-### B) Average income by employment type
-   Average income of "Full time employed" = 82.89 Thousand
+# Customer Behavior & Engagement
+High Transaction Volume: With 10K transactions and 2.50K transactions per customer, engagement is strong. This suggests customers are actively using services, which is a positive indicator of retention.
 
-   Average income of "Self employed" = 82.45 Thousand
+Monthly Stability: The Count of TransactionID line shows consistent activity (750–850/month), indicating a stable customer base and predictable revenue flow.
 
-   Average income of "Part time employed" = 82.39 Thousand
+# Financial Performance
+Total Amount Processed: ₹28.83M in transactions is substantial. However, the Average Balance by AccountID chart reveals negative balances (e.g., AccountID 102 at -157.87K), which may signal overdrafts, credit usage, or financial stress among certain segments.
 
-   Average income of "Unemployed" = 82.27 Thousand
-
-```bash
-   Each employment category has average earning approximately same.
-```  
- ### C) Default rate(%) by employment type 
-  Default rate(%) of "Unemployed" = 3.39
-
-  Default rate(%) of "Part time" = 3.01
-
-  Default rate(%) of "Self employed" = 2.86
-
-  Default rate(%) of "Full time" = 2.36
-
-```bash
-   Unemployed people are highest defaulter of loan.
-``` 
-### D) Average loan by age group
-   Average loan taken by "Adults"= 127901
-
-   Average loan taken by "Middle Aged"= 127459
-
-   Average loan taken by "Senior Citizens"= 127355
-
-   Average loan taken by "Teen"= 126674
-   
-```bash
-   Each age group is having average loan borrowing approximately same.
-``` 
-### E) Default rate(%) per year  
-Default rate in 2013 = 11.62
-
-Default rate in 2014 = 11.50
-
-Default rate in 2015 = 11.70
-
-Default rate in 2016 = 11.75
-
-Default rate in 2017 = 11.50
-
-Default rate in 2018 = 11.60
-```bash
-   Default rate is more than 11% on each year so need to focus on this
-```
-
-### Page 2:Applicant Demographic & Financial Profile
-### A) Median loan amount by credit score category
-Median loan amount with "Low" credit score = 128397
-
-Median loan amount with "Medium" credit score = 127764
-
-Median loan amount with "Very Low" credit score = 127515
-
-Median loan amount with "High" credit score = 127149
-```bash
-   People with low credit score buy on an average highest loan
-```
-### B) Average loan amount(high credit score) by age group and maritalstatus
-Adults who are divorced = 127.65 thousand (8.37%), married = 128.35 thousand (8.42%) ,single= 128.13 thousand (8.4%)
-
-Middle aged who are divorced = 128.12 thousand (8.4%), married = 126.74 thousand (8.31%) ,single= 127.14 thousand (8.34%)
-
-Senior citizens who are divorced = 126.92 thousand (8.32%), married = 127.23 thousand (8.34%) ,single= 127.42 thousand (8.35%)
-
-Teen who are divorced = 123.97 thousand (8.13%), married = 124.87 thousand (8.19%) ,single= 128.57 thousand (8.43%)
-
-```bash
-   Each age group person be single,married or divorced having high credit score taking
-   approximately same amount of loan
-```
-### C) Total loan (Adults) by credit score bins
-Loan taken by adults with "Medium" credit score = 4.6 Billion
-
-Loan taken by adults with "High" credit score = 4.5 Billion
-
-Loan taken by adults with "Very" credit score = 2.3 Billion
-
-Loan taken by adults with "Low" credit score = 1.1 Billion
-```bash
-   Among adults "Medium" and "High" credit score people are highest borrower
-```
-### D) Total loan (middle aged) having mortgage /dependents
-Loan taken by middle aged people with "Mortgage" and "Dependents = 3.1 Billion
-
-Loan taken by middle aged people with "Mortgage" but without "Dependents" = 3.1 Billion
-
-Loan taken by middle aged people without "Mortgage" and "Dependents = 3.1 Billion
-
-Loan taken by middle aged people without "Mortgage" and but with "Dependents = 3.1 Billion
-
-```bash
-   All middled aged people with or without mortgage taking approximately same amount of loan.
-```
-### E) Number of loans by education type
-Number of loan taken by "Bachelors" = 64366
-
-Number of loan taken by "High School" = 63903
-
-Number of loan taken by "Masters" = 63541
-
-Number of loan taken by "Phd" = 63537
-```bash
-   The number of loans taken by bachelors is among highest
-```
-### Page 2:Financial Risk Matrics
-### A) YOY % change on sum of loan amount taken
-```bash
-   The graph reflects that for the year 2014 and 2017 the sum of loan taken is in negative
-   as compared to previous this may indicate market trend or company policy.
-```
-### B) YOY % change of number of loan taken
-```bash
-   The graph reflects that for the year 2014 and 2017 the number of loan taken is negative
-   as compared to previous this may indicate market trend or company policy indicating (A) point above
-```
-### C) YTD loan amount by credit score bins and marital status
-
-```bash
-   If we look into the graph then we can interpret that people with medium and high credit score and 
-   divorced take highest amount of loan which is 0.67 Billion.In very low category single people with
-   0.36 Billion and low category married people with 0.17 Billion of loan taken are the highest.
-```
-### D) Distribution of total sum into "Income bracket" and "Employment type"
-
-```bash
- If we expand the graph then we can see that out of total loan of amount 32.6 Billion given maximum is
- is given to high income bracket 21.7 Billion (66%), 7.2 Billion (22%) to medium income bracket and 3.6 Billion (11%)
- given to low income bracket people
-```
+Top Customer Contributions: CustomerID 3 contributes positively (₹0.25M), while CustomerIDs 2 and 4 show negative amounts. This imbalance suggests a need to evaluate customer profitability and credit risk.
