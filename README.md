@@ -53,6 +53,25 @@ To establish a dashboard containg banking dataset using chatgpt and then to draw
 ```bash
                  Top Customer Amount = SUM(CombinedTransactions1[Amount])
 ```
+-Step 15 : Creating a line visual "Sum of Amount and Count of TransactionID by Month" by creating using "Amount" and "Transactionid" suggested by Perplexity.
+
+<img width="661" height="365" alt="image" src="https://github.com/user-attachments/assets/6a487a52-4f1a-4107-ab61-72027e86aeb0" />
+
+-Step 16 : Creating a donut visual "Distinct Customer Count by Gender" using DAX suggested by Perplexity.
+```bash
+                 "Customer Count by Gender = DISTINCTCOUNT(CombinedTransactions1[Gender])
+```
+<img width="302" height="296" alt="image" src="https://github.com/user-attachments/assets/418d0b72-fe65-4713-9c69-98e704ffc72b" />
+
+
+-Step 17 : Creating a clustured column visual "Distinct Customer Count by Gender" using DAX suggested by Perplexity.
+"Customer Count by Gender = DISTINCTCOUNT(CombinedTransactions1[Gender])
+
+
+<img width="303" height="289" alt="image" src="https://github.com/user-attachments/assets/8d8c510a-2774-4ac7-9599-b8d202293600" />
+
+
+
 
 # Snapshot of all 3 pages of report 
 # Page 1
