@@ -38,9 +38,6 @@ To establish a dashboard containg banking dataset using chatgpt and then to draw
                   Txns per Customer = DIVIDE([Total Transactions], [Active Customers], 0)
 ```
 
-- Step 21 : Decomposition tree is used to show relation between "Total loan taken" , "Income bracket" and "Employement type"
-<img width="634" height="309" alt="Decomposition Tree" src="https://github.com/user-attachments/assets/90c26190-4873-42ee-a3c2-26326b6c0b7b" />
-
 # Snapshot of all 3 pages of report 
 # Page 1
 <img width="1315" height="737" alt="Page 1" src="https://github.com/user-attachments/assets/acd2dfb0-a1ca-4068-80c8-ca4af25793f2" />
