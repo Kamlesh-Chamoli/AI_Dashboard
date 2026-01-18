@@ -79,6 +79,11 @@ To establish a dashboard containg banking dataset using chatgpt and then to draw
 ```
 <img width="313" height="291" alt="image" src="https://github.com/user-attachments/assets/4aa70d92-a766-4f95-9226-6515475a2972" />
 
+-Step 18 : Creating a stacked column visual "Count of Acoount By Open Date" suggested by Perplexity.
+-Step 19 : Creating a line visual "Total Transaction By Month" using DAX suggested by Perplexity.
+```bash
+               Transactions by Month = CALCULATE(COUNT(CombinedTransactions1[TransactionID]), ALLEXCEPT(CombinedTransactions1, CombinedTransactions1[TransactionDate].[Month]))
+```
 
 # Snapshot of all 3 pages of report 
 # Page 1
