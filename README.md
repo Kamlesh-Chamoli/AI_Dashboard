@@ -28,6 +28,7 @@ To establish a dashboard containg banking dataset using chatgpt and then to draw
                    Total Transactions = COUNT(CombinedTransactions1[TransactionID])
  ```
 <img width="273" height="249" alt="image" src="https://github.com/user-attachments/assets/14d16766-f3c8-4450-ad3b-7fe20d5205e6" />
+
 - Step 10 : Creating a card visual "Total Amount" using DAX formula suggested by Perplexity.
 ```bash
                  Total Amount = SUM(CombinedTransactions1[Amount])
