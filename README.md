@@ -115,7 +115,6 @@ Gender Distribution: Equal split among Female, Male, and Unknown (33.33% each).
 
 Age Groups: Uniform distribution across 26–35, 36–50, and 51+ (100 customers each).
 
-Insight: The equal distribution suggests either a synthetic dataset or a need to validate data diversity. Consider adding filters or slicers to explore real demographic skews.
 
 # Account Insights
 Account Type: Balanced count between Current and Savings accounts (200 each).
