@@ -57,20 +57,25 @@ To establish a dashboard containg banking dataset using chatgpt and then to draw
 
 <img width="661" height="365" alt="image" src="https://github.com/user-attachments/assets/6a487a52-4f1a-4107-ab61-72027e86aeb0" />
 
--Step 16 : Creating a donut visual "Distinct Customer Count by Gender" using DAX suggested by Perplexity.
+
+-Step 16 : Creating a clustured column visual "Distinct Customer Count by Gender" using DAX suggested by Perplexity.
 ```bash
-                 "Customer Count by Gender = DISTINCTCOUNT(CombinedTransactions1[Gender])
+                 Customer Count by Gender = DISTINCTCOUNT(CombinedTransactions1[Gender])
 ```
-<img width="302" height="296" alt="image" src="https://github.com/user-attachments/assets/418d0b72-fe65-4713-9c69-98e704ffc72b" />
-
-
--Step 17 : Creating a clustured column visual "Distinct Customer Count by Gender" using DAX suggested by Perplexity.
-"Customer Count by Gender = DISTINCTCOUNT(CombinedTransactions1[Gender])
-
 
 <img width="303" height="289" alt="image" src="https://github.com/user-attachments/assets/8d8c510a-2774-4ac7-9599-b8d202293600" />
 
+-Step 17 : Creating two column one customer age and other customer age group.Create stacked column chart "Count Of Customer ID By Age Group" suggested by Perplexity showin different age group.
+```bash
+                Customer Age = DATEDIFF(CombinedTransactions1[DateOfBirth], TODAY(), YEAR)
+                Customer Age Group = SWITCH(TRUE(), [Customer Age]<=25, "â‰¤25", [Customer Age]<=35, "26-35", [Customer Age]<=50,"36-50","51+")
+```
 
+-Step 18 : Creating a treemap visual "Account Count By Account Type" using DAX suggested by Perplexity.
+```bash
+                Account Count by Type = COUNT(CombinedTransactions1[AccountID])
+```
+<img width="313" height="291" alt="image" src="https://github.com/user-attachments/assets/4aa70d92-a766-4f95-9226-6515475a2972" />
 
 
 # Snapshot of all 3 pages of report 
