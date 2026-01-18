@@ -37,6 +37,22 @@ To establish a dashboard containg banking dataset using chatgpt and then to draw
 ```bash
                   Txns per Customer = DIVIDE([Total Transactions], [Active Customers], 0)
 ```
+-Step 12 : Creating a line visual "Average Balance By Account Id" using DAX formula suggested by Perplexity.
+```bash
+                  Avg Balance = AVERAGE(CombinedTransactions1[Balance])
+```
+<img width="463" height="252" alt="image" src="https://github.com/user-attachments/assets/880d7083-8410-404a-8823-c202c37adc52" />
+
+-Step 13 : Creating a clusture column visual "Active Customer by Gender" using DAX formula suggested by Perplexity.
+```bash
+                  Active Customers = DISTINCTCOUNT(CombinedTransactions1[CustomerID])
+```
+<img width="667" height="379" alt="image" src="https://github.com/user-attachments/assets/640f8982-1eae-49ed-953e-dfcee8616702" />
+
+-Step 14 : Creating a clustured column visual "Top 3 Customer Amount By CustomerId" using DAX formula suggested by Perplexity.
+```bash
+                 Top Customer Amount = SUM(CombinedTransactions1[Amount])
+```
 
 # Snapshot of all 3 pages of report 
 # Page 1
