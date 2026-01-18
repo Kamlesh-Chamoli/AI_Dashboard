@@ -109,3 +109,22 @@ Monthly Stability: The Count of TransactionID line shows consistent activity (75
 Total Amount Processed: ₹28.83M in transactions is substantial. However, the Average Balance by AccountID chart reveals negative balances (e.g., AccountID 102 at -157.87K), which may signal overdrafts, credit usage, or financial stress among certain segments.
 
 Top Customer Contributions: CustomerID 3 contributes positively (₹0.25M), while CustomerIDs 2 and 4 show negative amounts. This imbalance suggests a need to evaluate customer profitability and credit risk.
+
+# Customer Demographics
+Gender Distribution: Equal split among Female, Male, and Unknown (33.33% each).
+
+Age Groups: Uniform distribution across 26–35, 36–50, and 51+ (100 customers each).
+
+Insight: The equal distribution suggests either a synthetic dataset or a need to validate data diversity. Consider adding filters or slicers to explore real demographic skews.
+
+# Account Insights
+Account Type: Balanced count between Current and Savings accounts (200 each).
+
+Open Dates: Four distinct dates with equal account counts (100 each).
+
+Suggestion: A timeline or cumulative account growth chart could better reveal trends in account openings over time.
+
+# Transaction Trends
+Monthly Transactions: Fairly consistent, with slight peaks in October and December (868 each), and dips in February (756).
+
+Opportunity: Highlight seasonal patterns or promotional impacts. A year-over-year comparison could add depth.
