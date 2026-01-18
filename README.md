@@ -122,9 +122,8 @@ Account Type: Balanced count between Current and Savings accounts (200 each).
 
 Open Dates: Four distinct dates with equal account counts (100 each).
 
-Suggestion: A timeline or cumulative account growth chart could better reveal trends in account openings over time.
 
 # Transaction Trends
 Monthly Transactions: Fairly consistent, with slight peaks in October and December (868 each), and dips in February (756).
 
-Opportunity: Highlight seasonal patterns or promotional impacts. A year-over-year comparison could add depth.
+
