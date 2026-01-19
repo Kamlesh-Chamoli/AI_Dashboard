@@ -55,7 +55,7 @@ To establish a dashboard containg banking dataset using chatgpt and then to draw
 ```bash
                  Top Customer Amount = SUM(CombinedTransactions1[Amount])
 ```
--Step 15 : Creating a line visual "Sum of Amount and Count of TransactionID by Month" by creating using "Amount" and "Transactionid" suggested by Perplexity.
+-Step 15 : Creating a line visual "Sum of Amount and Count of TransactionID by Month" by using "Amount" and "Transactionid" columns suggested by Perplexity.
 
 <img width="661" height="365" alt="image" src="https://github.com/user-attachments/assets/6a487a52-4f1a-4107-ab61-72027e86aeb0" />
 
