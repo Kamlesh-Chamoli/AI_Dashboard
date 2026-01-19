@@ -20,7 +20,7 @@ To establish a dashboard containg banking dataset using chatgpt and then to draw
 <img width="617" height="457" alt="image" src="https://github.com/user-attachments/assets/8f4d5e2d-3105-4ace-a679-d66ec556678d" />
 
 - Step 6 : Click on "Transform Data" tab in Power Bi tab to see data type of each column and change it to "Text","Decimal","Alphabet" etc according to column needs.Also, do data cleaning i.e removing duplictes, 'replace' null to 'unknown'.
-- Step 7 : Whhile changing data type of dates column it is showing "ERROR" therefore choose "Use Locale" from dropdown then "Data Type" = Date and "Locale" = English(US).
+- Step 7 : While changing data type of dates column it is showing "ERROR" therefore choose "Use Locale" from dropdown then "Data Type" = Date and "Locale" = English(US).
 
 - Step 8 : In first page a rectangle containing "Transaction Overview" as text is put from Insert--> Shape option from Power Bi. 
 - Step 9 : Creating a card visual "Total transaction Count" using DAX formula suggested by Perplexity.
