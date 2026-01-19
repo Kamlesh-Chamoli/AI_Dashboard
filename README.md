@@ -67,7 +67,7 @@ To establish a dashboard containg banking dataset using chatgpt and then to draw
 
 <img width="303" height="289" alt="image" src="https://github.com/user-attachments/assets/8d8c510a-2774-4ac7-9599-b8d202293600" />
 
--Step 17 : Creating two column one customer age and other customer age group.Create stacked column chart "Count Of Customer ID By Age Group" suggested by Perplexity showin different age group.
+-Step 17 : Creating two column one customer age and other customer age group.Create stacked column chart "Count Of Customer ID By Age Group" suggested by Perplexity showing different age group.
 ```bash
                 Customer Age = DATEDIFF(CombinedTransactions1[DateOfBirth], TODAY(), YEAR)
                 Customer Age Group = SWITCH(TRUE(), [Customer Age]<=25, "â‰¤25", [Customer Age]<=35, "26-35", [Customer Age]<=50,"36-50","51+")
