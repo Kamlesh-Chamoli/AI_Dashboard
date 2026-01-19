@@ -60,7 +60,7 @@ To establish a dashboard containg banking dataset using chatgpt and then to draw
 <img width="661" height="365" alt="image" src="https://github.com/user-attachments/assets/6a487a52-4f1a-4107-ab61-72027e86aeb0" />
 
 
--Step 16 : Creating a clustured column visual "Distinct Customer Count by Gender" using DAX suggested by Perplexity.
+-Step 16 : Creating a donut visual "Distinct Customer Count by Gender" using DAX suggested by Perplexity.
 ```bash
                  Customer Count by Gender = DISTINCTCOUNT(CombinedTransactions1[Gender])
 ```
