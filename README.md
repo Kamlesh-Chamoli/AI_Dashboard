@@ -45,7 +45,7 @@ To establish a dashboard containg banking dataset using chatgpt and then to draw
 
 -Step 13 : Creating a clusture column visual "Active Customer by Gender" using DAX formula suggested by Perplexity.
 ```bash
-                  Active Customers = DISTINCTCOUNT(CombinedTransactions1[CustomerID])
+                  Active Customers = DISTINCTCOUNT(CombinedTransactions1[CustomerID])  
 ```
 
 <img width="667" height="379" alt="image" src="https://github.com/user-attachments/assets/640f8982-1eae-49ed-953e-dfcee8616702" />
